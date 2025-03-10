@@ -1,5 +1,3 @@
-console.log('Hello World!');
-
 const header = document.querySelector("header");
 
 window.addEventListener("scroll", () => {
@@ -10,11 +8,11 @@ window.addEventListener("scroll", () => {
   }
 });
 
-let menu = document.querySelector('.menu')
+let menuButton = document.querySelector('.menu-button')
 let menuContent = document.querySelector('.menu-content')
 
-menu.addEventListener('change',(e)=>{
-  if (menu.checked) {
+menuButton.addEventListener('change',(e)=>{
+  if (menuButton.checked) {
     menuContent.classList.add('opened')
   } else {
     menuContent.classList.remove('opened')
